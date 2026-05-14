@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Library Management</title>
+  </head>
+  <body>
+    <h1>Library Management System</h1>
+
+    <form method="POST" action="/add">
+      <input type="text" name="title" placeholder="Book Title" />
+      <button type="submit">Add Book</button>
+    </form>
+
+    <h2>Books</h2>
+    <ul>
+      {% for book in books %}
+      <li>{{ book }}</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
